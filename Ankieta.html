@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <title>Ankieta o Samochodach</title>
+</head>
+<body>
+    <h1>Ankieta o Samochodach</h1>
+    <form action="mailto:marcin.koper@tm1.edu.pl" method="post" enctype="text/plain">
+        <h2>Podaj swoją płeć</h2>
+        <input type="radio" name="plec" id="kobieta" value="kobieta">
+        <label for="kobieta">Kobieta</label><br>
+        <input type="radio" name="plec" id="mezczyzna" value="mezczyzna">
+        <label for="mezczyzna">Mężczyzna</label><br>
+        <input type="radio" name="plec" id="inna" value="inna">
+        <label for="inna">Inna</label><br>
+        
+        <h2>Twój obecny samochód</h2>
+        <label for="obecny_samochod">Marka i model:</label>
+        <input type="text" id="obecny_samochod" name="obecny_samochod" placeholder="np. Honda Civic">
+        <br><br>
+        
+        <h2>Twój ulubiony samochód</h2>
+        <label for="ulubiony_samochod">Marka i model:</label>
+        <input type="text" id="ulubiony_samochod" name="ulubiony_samochod" placeholder="np. Mazda RX-7">
+        <br><br>
+        
+        <h2>Jak często zmieniasz samochód?</h2>
+        <select name="czestotliwosc_zmiany" id="czestotliwosc_zmiany">
+            <option value="co_roku">Co roku</option>
+            <option value="co_2_lata">Co 2 lata</option>
+            <option value="co_5_lat">Co 5 lat</option>
+            <option value="rzadziej">Rzadziej</option>
+        </select>
+        <br><br>
+        
+        <h2>Jakie cechy są dla Ciebie najważniejsze przy wyborze samochodu?</h2>
+        <input type="checkbox" id="cecha1" name="cechy" value="osiagi">
+        <label for="cecha1">Osiągi</label><br>
+        <input type="checkbox" id="cecha2" name="cechy" value="ekonomia">
+        <label for="cecha2">Ekonomia</label><br>
+        <input type="checkbox" id="cecha3" name="cechy" value="komfort">
+        <label for="cecha3">Komfort</label><br>
+        <input type="checkbox" id="cecha4" name="cechy" value="bezpieczenstwo">
+        <label for="cecha4">Bezpieczeństwo</label><br>
+        <input type="checkbox" id="cecha5" name="cechy" value="design">
+        <label for="cecha5">Design</label><br>
+        <input type="checkbox" id="cecha6" name="cechy" value="inne">
+        <label for="cecha6">Inne</label><br>
+        <br><br>
+        
+        <h2>Jakie jest Twoje ulubione miejsce do jazdy?</h2>
+        <input type="radio" id="miasto" name="miejsce_jazdy" value="miasto">
+        <label for="miasto">Miasto</label><br>
+        <input type="radio" id="autostrada" name="miejsce_jazdy" value="autostrada">
+        <label for="autostrada">Autostrada</label><br>
+        <input type="radio" id="gory" name="miejsce_jazdy" value="gory">
+        <label for="gory">Góry</label><br>
+        <input type="radio" id="inne" name="miejsce_jazdy" value="inne">
+        <label for="inne">Inne</label><br>
+        <br><br>
+        
+        <input type="submit" value="Wyślij">
+        <input type="reset" value="Wyczyść">
+    </form>
+</body>
+</html>

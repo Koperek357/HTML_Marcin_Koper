@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <title>Strona Główna</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <header id="top">
+        <span class="logo">7 Cudownych Samochodów</span>
+    </header>
+    <nav class="topnav" id="myTopnav">
+        <a href="Index.html" class="active">Główna</a>
+        <a href="#Galeria">Galeria</a>
+        <a href="#informacje_ogólne">Informacje Ogólne</a>
+        <a href="#porownanie-samochodow">Porównanie Samochodów</a>
+        <a href="#najwazniejsze-czesci">Najważniejsze Części Samochodu</a>
+        <a href="#Ankieta">Ankieta</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    <main>
+        <iframe src="Galeria.html" width="100%" height="800px" id="Galeria"></iframe>
+        <a href="#top" class="back-to-top">Powrót do góry</a>
+        <section id="informacje_ogólne">
+            <h2>Toyota Supra</h2>
+            <p>Toyota Supra to samochód sportowy i grand tourer produkowany przez Toyota Motor Corporation. Pierwsze cztery generacje Supry były produkowane od 1978 do 2002 roku, a piąta generacja jest produkowana od marca 2019 roku.</p>
+            <a href="https://www.autocentrum.pl/toyota/supra/" target="_blank">Więcej informacji</a>
+        </section>
+        <section>
+            <h2>Honda Civic</h2>
+            <p>Honda Civic to kompaktowy samochód produkowany przez Hondę od 1972 roku. Jest znany ze swojej niezawodności, oszczędności paliwa i sportowego designu, co czyni go popularnym wyborem wśród kupujących samochody na całym świecie.</p>
+            <a href="https://www.autocentrum.pl/honda/civic/" target="_blank">Więcej informacji</a>
+        </section>
+        <section>
+            <h2>Mitsubishi Evo 5</h2>
+            <p>Mitsubishi Evo 5 to samochód sportowy o wysokich osiągach produkowany przez Mitsubishi Motors. Jest częścią serii Lancer Evolution i jest znany ze swojego turbodoładowanego silnika i napędu na wszystkie koła.</p>
+            <a href="https://www.autocentrum.pl/mitsubishi/lancer/" target="_blank">Więcej informacji</a>
+        </section>
+        <section>
+            <h2>Nissan GTR R34</h2>
+            <p>Nissan GTR R34 to samochód sportowy o wysokich osiągach produkowany przez Nissana od 1999 do 2002 roku. Jest częścią serii Skyline GT-R i jest znany ze swojej zaawansowanej technologii i imponujących osiągów.</p>
+            <a href="https://www.autocentrum.pl/nissan/gt-r/" target="_blank">Więcej informacji</a>
+        </section>
+        <section>
+            <h2>Subaru Impreza</h2>
+            <p>Subaru Impreza to kompaktowy samochód produkowany przez Subaru od 1992 roku. Jest znany ze swojego napędu na wszystkie koła i modeli WRX oraz WRX STI o wysokich osiągach.</p>
+            <a href="https://www.autocentrum.pl/subaru/impreza/" target="_blank">Więcej informacji</a>
+        </section>
+        <section>
+            <h2>Mazda RX-7</h2>
+            <p>Mazda RX-7 to samochód sportowy produkowany przez Mazdę od 1978 do 2002 roku. Jest znana ze swojego silnika rotacyjnego i lekkiej konstrukcji, co czyni ją popularnym wyborem wśród entuzjastów motoryzacji i kierowców wyścigowych.</p>
+            <a href="https://www.autocentrum.pl/mazda/rx-7/" target="_blank">Więcej informacji</a>
+        </section>
+        <section>
+            <h2>Toyota AE86</h2>
+            <p>Toyota AE86 to małe, lekkie coupé lub hatchback wprowadzone przez Toyotę w 1983 roku jako część piątej generacji Toyoty Corolli. Jest znana ze swojego układu napędu na tylne koła i zrównoważonego prowadzenia.</p>
+            <a href="https://www.autocentrum.pl/publikacje/testy-aut-uzywanych/krolowa-driftu-toyota-ae86-1983-1987/" target="_blank">Więcej informacji</a>
+        </section>
+        <a href="#top" class="back-to-top">Powrót do góry</a>
+        <section id="porownanie-samochodow">
+            <h2>Porównanie Samochodów</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Samochód</th>
+                        <th>Rok produkcji</th>
+                        <th>Typ</th>
+                        <th>Napęd</th>
+                        <th>Moc</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Samochód">Toyota Supra</td>
+                        <td data-label="Rok produkcji">1978-2002, 2019-obecnie</td>
+                        <td data-label="Typ">Sportowy/Grand Tourer</td>
+                        <td data-label="Napęd">Tylny</td>
+                        <td data-label="Moc">335-382 KM</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Samochód">Honda Civic</td>
+                        <td data-label="Rok produkcji">1972-obecnie</td>
+                        <td data-label="Typ">Kompaktowy</td>
+                        <td data-label="Napęd">Przedni</td>
+                        <td data-label="Moc">158-306 KM</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Samochód">Mitsubishi Evo 5</td>
+                        <td data-label="Rok produkcji">1998-1999</td>
+                        <td data-label="Typ">Sportowy</td>
+                        <td data-label="Napęd">4x4</td>
+                        <td data-label="Moc">276 KM</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Samochód">Nissan GTR R34</td>
+                        <td data-label="Rok produkcji">1999-2002</td>
+                        <td data-label="Typ">Sportowy</td>
+                        <td data-label="Napęd">4x4</td>
+                        <td data-label="Moc">276 KM</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Samochód">Subaru Impreza</td>
+                        <td data-label="Rok produkcji">1992-obecnie</td>
+                        <td data-label="Typ">Kompaktowy</td>
+                        <td data-label="Napęd">4x4</td>
+                        <td data-label="Moc">152-310 KM</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Samochód">Mazda RX-7</td>
+                        <td data-label="Rok produkcji">1978-2002</td>
+                        <td data-label="Typ">Sportowy</td>
+                        <td data-label="Napęd">Tylny</td>
+                        <td data-label="Moc">276 KM</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Samochód">Toyota AE86</td>
+                        <td data-label="Rok produkcji">1983-1987</td>
+                        <td data-label="Typ">Kompaktowy</td>
+                        <td data-label="Napęd">Tylny</td>
+                        <td data-label="Moc">112-128 KM</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="#top" class="back-to-top">Powrót do góry</a>
+        </section>
+        <section id="najwazniejsze-czesci">
+            <h2>Najważniejsze Części Samochodu</h2>
+            <ul>
+                <li>Silnik</li>
+                <li>Skrzynia biegów</li>
+                <li>Układ hamulcowy</li>
+                <li>Układ kierowniczy</li>
+                <li>Układ zawieszenia</li>
+                <li>Układ wydechowy</li>
+                <li>Koła i opony</li>
+                <li>Akumulator</li>
+                <li>Chłodnica</li>
+                <li>Alternator</li>
+            </ul>
+            <a href="#top" class="back-to-top">Powrót do góry</a>
+        </section>
+        <section>
+            <h2>Salon Toyoty</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93062.1277687467!2d21.05263462336719!3d52.19818237131317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecb66085731ab%3A0xc2fa9527d6134554!2sCarolina%20Toyota%20Wola!5e0!3m2!1spl!2spl!4v1736954749911!5m2!1spl!2spl" width="600px" height="450px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+        </section>
+        <section class="sound">
+            <h2>Dźwięk Silnika z tłokiem obrotowym</h2>
+                <audio controls>
+                    <source src="Multimedia/rotary_engine_sound.mp3" type="audio/mpeg">
+                    Twoja przeglądarka nie obsługuje elementu audio.
+                </audio>
+        </section>
+        <iframe src="Ankieta.html" width="60%" height="800px" id="Ankieta"></iframe>
+    </main>
+    <footer>
+        <a href="#top" class="back-to-top">Powrót do góry</a>
+        Marcin Koper 2ta
+    </footer>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <title>Galeria</title>
+</head>
+<body class="Galeria_tlo">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('.gallery-container img');
+            const enlargedImage = document.getElementById('enlargedImage');
+            const prevButton = document.getElementById('prev');
+            const nextButton = document.getElementById('next');
+            let currentIndex = 0;
+
+            function showImage(index) {
+                enlargedImage.src = images[index].src;
+                currentIndex = index;
+            }
+
+            images.forEach((img, index) => {
+                img.addEventListener('click', () => {
+                    showImage(index);
+                });
+            });
+
+            prevButton.addEventListener('click', () => {
+                currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+                showImage(currentIndex);
+            });
+
+            nextButton.addEventListener('click', () => {
+                currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+                showImage(currentIndex);
+            });
+
+            showImage(currentIndex);
+        });
+    </script>
+    <header id="Galeria_header">
+        <h1 id="Galeria_h1">Galeria</h1>
+        <h5 id="Galeria_h5">Naciśnij przycisk aby przejść do następnego zdjęcia</h5>
+    </header>
+    <section id="gallery">
+        <div class="enlarged-container">
+            <div class="button-container">
+                <button id="prev">Poprzedni</button>
+                <button id="next">Następny</button>
+            </div>
+            <img id="enlargedImage" src="Multimedia/AE86.jpg" alt="Enlarged Image">
+        </div>
+        <div class="gallery-container">
+            <img src="Multimedia/Supra.jpg" alt="Toyota Supra">
+            <img src="Multimedia/Civic.jpg" alt="Honda Civic">
+            <img src="Multimedia/Evo5.jpg" alt="Mitsubishi Evo 5">
+            <img src="Multimedia/GTR34.jpg" alt="Nissan GTR R34">
+            <img src="Multimedia/Impreza.jpg" alt="Subaru Impreza">
+            <img src="Multimedia/RX7.jpg" alt="Mazda RX-7">
+            <img src="Multimedia/AE86.jpg" alt="Toyota AE86">
+        </div>
+    </section>
+</body>
+</html>
